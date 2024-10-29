@@ -38,11 +38,10 @@ print_array(array, size);
 }
 }
 }
-if (array[i + 1] != array[high])
-{
+/* Ensure to print even if the pivot swap does not change elements */
 swap(&array[i + 1], &array[high]);
 print_array(array, size);
-}
+
 return (i + 1);
 }
 
