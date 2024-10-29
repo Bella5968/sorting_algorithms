@@ -30,11 +30,10 @@ for (j = i; j >= gap && array[j - gap] > temp; j -= gap)
 array[j] = array[j - gap];
 }
 array[j] = temp;
-}
-        
+
 /* Print array after each gap reduction */
 print_array(array, size);
-        
+
 /* Decrease gap */
 gap = (gap - 1) / 3;
 }
