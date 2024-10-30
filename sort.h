@@ -12,14 +12,6 @@ struct listint_s *prev;
 struct listint_s *next;
 } listint_t;
 
-/* Define deck_node_t if it's needed for other tasks */
-typedef struct deck_node_s
-{
-int value; /* Example field */
-struct deck_node_s *prev;
-struct deck_node_s *next;
-} deck_node_t;
-
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
